@@ -5,10 +5,12 @@ import { mapActions, mapState } from "vuex";
 
 export default {
   name: "App",
+
   components: {
     DateNavigation,
     BookingsTable,
   },
+
   computed: {
     ...mapState("bookings", ["isLoading", "loadError"]),
     ...mapState("period", ["selectedDay"]),
